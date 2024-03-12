@@ -17,3 +17,5 @@ router.route('/:id')
     .post(isLoggedIn, authorisedRoles("ADMIN"), upload.single("lecture"), addLectureToCourseById);
 
 export default router
+
+
